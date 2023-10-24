@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="game-container">
+        <div class="scoreboard">
+            <table id="head" border="0">
+			<tr><th><h2 style="text-align:center;padding-left:90px;">Scoreboard</h2></th>
+			<th id="sound-control" style="text-align:center;padding-left:40px;"><img id="mute-sound" src="mute.png"><img id="unmute-sound" src="unmute.png" style="display: none;"></th></tr>
+            </table>
+			<div class="score">
+                <span>Player X (Human): </span> <span id="x-score">0</span>
+            </div>
+            <div class="score">
+                <span>Player O (AI): </span> <span id="o-score">0</span>
+            </div>
+            <div class="score">
+                <span>No. of Draws: </span> <span id="draws-score">0</span>
+            </div>
+			
+            <button id="reset-button">Reset Game</button>
+        </div>
+        <div class="tic-tac-toe">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        
+    </div>
+    <div class="modal" id="win-modal">
+        <div class="modal-content win-message">
+            <p id="win-message"></p>
+            <button id="close-modal">OK</button>
+        </div>
+    </div>
+
+    <audio id="playerXSound" src="xnew.mp3"></audio>
+    <audio id="playerOSound" src="oclick.mp3"></audio>
+    <audio id="winSoundX" src="Xwin.mp3"></audio>
+    <audio id="winSoundO" src="Owin.mp3"></audio>
+    <audio id="drawSound" src="drawwin.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
