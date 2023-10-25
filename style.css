@@ -167,3 +167,11 @@ h1 {
 .win-message {
     animation: fadeIn 0.5s ease-in-out;
 }
+#footer
+{
+font-size:12px;
+font-weight:bold;
+position :absolute;
+bottom:0px;
+text-align:center;
+}
